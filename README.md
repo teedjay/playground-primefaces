@@ -1,5 +1,6 @@
 # playground-primefaces
-Playing around with PrimeFaces
+Playing around with PrimeFaces using Java 8, Jetty 8 and JSF 2.2 (Mojarra implementation).
+Consider to add CDI and other EJB features later (alternatively switch to TomEE-plume).
 
 ## How to compile and run using Jetty :
 Use the commands below to compile and run in Jetty, then open your browser at [http://localhost:8080/](http://localhost:8080/)
