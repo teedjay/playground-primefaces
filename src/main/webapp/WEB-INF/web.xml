@@ -7,13 +7,11 @@
     <context-param>
         <param-name>javax.faces.PROJECT_STAGE</param-name>
         <param-value>Development</param-value>
-        <!-- Development, Production, SystemTest, UnitTest -->
     </context-param>
 
     <context-param>
         <param-name>javax.faces.FACELETS_SKIP_COMMENTS</param-name>
         <param-value>true</param-value>
-        <!-- comments are part of the DOM and would count as a column if used in panelGrid etc -->
     </context-param>
 
     <servlet>
@@ -26,10 +24,6 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
-
-    <session-config>
-        <session-timeout>30</session-timeout>
-    </session-config>
 
     <welcome-file-list>
         <welcome-file>index.xhtml</welcome-file>

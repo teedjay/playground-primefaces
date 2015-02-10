@@ -3,20 +3,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.org/ui">
 
     <h:head>
         <f:facet name="first">
             <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-            <title>Hello World</title>
+            <title>Hello There</title>
         </f:facet>
     </h:head>
 
     <h:body>
 
-        <h1>Hello World</h1>
-        This application is used to test PrimeFaces and JSF 2.2.
+        <h1>Dummy Users</h1>
+        This application is used to play around with PrimeFaces and JSF 2.2, right now it uses data from UserView instance #{userView.instanceId}.
+
+        <p:dataTable value="#{userView.users}" var="u">
+            <p:column headerText="Name">#{u.name}</p:column>
+            <p:column headerText="City">#{u.city}</p:column>
+            <p:column headerText="Code">#{u.code}</p:column>
+        </p:dataTable>
 
     </h:body>
 
