@@ -2,7 +2,7 @@
 Playing around with PrimeFaces
 
 ## How to compile and run using Jetty :
-Use the commands below to compile and run in Jetty, then open your browser at [http://localhost:8080/]
+Use the commands below to compile and run in Jetty, then open your browser at [http://localhost:8080/](http://localhost:8080/)
 
 <pre>mvn clean package</pre>
 <pre>mvn jetty:run</pre>
